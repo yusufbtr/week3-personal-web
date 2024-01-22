@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf B — Full Stack Developer</title>
+    <link href="css/global.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="flex flex-row justify-between items-center p-4 mb-8">
+        <div class="brand">
+            <button onclick="window.location.href=window.location.href">.yusuf</button>
+        </div>
+        <nav class="flex navbar gap-4 bg-red-200 px-6 py-2 rounded-lg border shadow dark:bg-slate-900 dark:border-red-200 dark:text-white">
+            <li class="active reset filter-trigger" data-filter="all">Home</li>
+            <li class="filter-trigger" data-filter="about">About Me</li>
+            <li class="filter-trigger" data-filter="portfolio">Portfolio</li>
+        </nav>
+        <div class="flex gap-4">
+            <a href="mailto:yusufbachtiar14@gmail.com" class="text-xl dark:text-white hover:text-slate-600 hover:drop-shadow-md">Contact Me</a>
+        </div>
+    </header>
+
+    <main class="item-wrapper grid tablet:grid-cols-2 lg:grid-cols-4 desktop:flex-cols gap-8 w-[1200px] m-auto">
+        <div class="card item about lg:col-span-2 flex flex-col justify-between bg-slate-50 dark:bg-slate-900 dark:border-red-200 dark:text-slate-50">
+            <div class="flex gap-2">
+                <img src="/assets/img/avatar2.png" class="avatarbio">
+            </div>
+            <p style="z-index:1" class="desc-bio">Hi, there. Yusuf here. I'm currently working as a QA Engineer in a payment gateway company in Jakarta. My current activity is learning javascript at Devscale to become a Software Engineer.</p>
+        </div>
+        <div class="card item about bg-black flex items-center justify-center dark:border-red-200">
+            <a href="https://twitter.com/yusufbchtr" target="_blank">
+                <img src="/assets/img/twitter.png" width="200px" height="200px" class="object-cover scale-110 hover:scale-125 transition duration-300">
+            </a>
+        </div>
+        <div class="border item about rounded-2xl w-[280px] row-span-2 drop-shadow-md dark:border-red-200">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4885.782906055122!2d106.95732825012115!3d-6.2222886082361955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1705855543489!5m2!1sid!2sid" width="278" height="592" class="rounded-2xl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="bg-slate-50 item portfolio border rounded-2xl p-4 w-[280px] row-span-2 flex flex-col justify-around drop-shadow-md dark:bg-slate-900 dark:border-red-200 dark:text-slate-50">
+            <h2 class="appreciate-title"><span id="runningText"></span></h2>
+            <p style="z-index:1" class="appreciate-desc">Take a moment to appreciate yourself for making it this far. Even though it's hard, even though it's difficult and even though it's not fun, it will pass and you will overcome it. You are not alone, because there must be other people who feel the same way as you. Therefore, let us together appreciate what we have done so far. Press the Appreciate Us button, to appreciate what you, me and we have done so far. Cheer up!!</p>
+            <button id="confetti-btn" class="appreciate-btn">Appreciate Us</button>
+        </div>
+        <div class="card item about bg-black flex items-center justify-center dark:border-red-200">
+            <a href="https://github.com/yusufbtr" target="_blank">
+                <img src="/assets/img/github.svg" width="200px" height="200px" class="object-cover scale-110 hover:scale-125 transition duration-300">
+            </a>
+        </div>
+        <div class="card item about portfolio flex bg-bluelinkedin items-center justify-center dark:border-red-200">
+            <a href="https://www.linkedin.com/in/yusuf-bachtiar/" target="_blank">
+                <img src="/assets/img/linkedIn.png" width="200px" height="200px" class="object-cover scale-110 hover:scale-125 transition duration-300">
+            </a>
+        </div>
+        <div class="card item about portfolio bg-slate-50 lg:col-span-2 p-0 flex items-center justify-center dark:border-red-200">
+            <a href="https://dribbble.com/yusufbtr" target="_blank">
+                <img src="/assets/img/dribbble2.png" height="124px" width="420px" class="object-cover scale-110 hover:scale-125 transition duration-300">
+            </a>
+        </div>
+        <div class="card bg-slate-50 flex flex-row justify-center items-center dark:bg-slate-900 dark:border-red-200">
+            <img class="moon cursor-pointer w-[72px] h-[72px] hover:scale-150 transition duration-300" src="/assets/img/moon.png"/>
+            <img class="sun cursor-pointer w-[72px] h-[72px] hover:scale-125 transition duration-300" src="/assets/img/sun.png"/>
+        </div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+    <footer class="m-4 mt-20">
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 Yusuf Bachtiar. DevscaleID Batch 4 | Inspired by <a href="https://nevflynn.com/" class="hover:underline" target="_blank">Nev Flynn</a></span>
+    </footer>
+</body>
+</html>
